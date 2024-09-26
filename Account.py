@@ -65,7 +65,7 @@ class Account:
         history_list = []
         with open(self.hist_file_path, "r") as file:
             lines = file.readlines()
-            if not lines:  # Handle empty file
+            if not lines: 
                 return "No transaction history available."
             for line in lines:
                 try:
